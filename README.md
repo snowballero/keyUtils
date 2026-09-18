@@ -2,5 +2,5 @@
 ## keyUtils is a barebones utility tool for testing fonts, and multiple other things.
 
 
-[![Download](https://shields.io)](https://github.com/snowballero/KeyUtils/releases)
+[![Download KeyUtils](https://img.shields.io/badge/Download-KeyUtils-brightgreen?style=for-the-badge&logo=github)](https://github.com/snowballero/KeyUtils/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/snowballero/KeyUtils/total.svg)](https://github.com/snowballero/KeyUtils/releases)
