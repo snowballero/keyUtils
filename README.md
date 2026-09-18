@@ -7,4 +7,6 @@
 [![Downloads](https://img.shields.io/github/downloads/snowballero/KeyUtils/total?style=for-the-badge&logo=github)](https://github.com/snowballero/KeyUtils/releases)
 
 # Manual download (terminal command)
+```bash
 # curl -O https://raw.githubusercontent.com/snowballero/keyUtils/main/keyutils && chmod +x keyutils && ./keyutils
+```
