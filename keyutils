@@ -1,0 +1,110 @@
+#!/bin/bash
+clear
+bb=false
+help=false
+while getopts "bhlnse" opt; do
+	case $opt in
+	b) bb=true ;;
+	h) help=true ;;
+	l) lt=true ;;
+	n) nb=true ;;
+	s) sb=true ;;
+	e) ex=true ;;
+	esac
+done
+if [ "$bb" = true ]; then
+        echo -e "KeyUtils"
+        echo ""
+        echo -e "[*] Letters"
+        echo "0 1 2 3 4 5 6 7 8 9"
+        echo "Q W E R T Y U I O P"
+        echo "q w e r t y u i o p"
+        echo "A S D F G H J K L"
+        echo "a s d f g h j k l"
+        echo "Z X C V B N M , ."
+        echo "z x c v b n m , ."
+        echo ""
+        echo -e "[*] Symbols"
+        echo "! @ # $ % ^ & * () |"
+        echo "[] {} ? <> / ~ \\ \` ' \" "
+        echo "+ - × ÷ = ≠ ≈ < > ≤ ≥ ±"
+        echo "$ € £ ¥ ₹ ₽ ₿ ¢"
+elif [ "$help" = true ]; then
+	echo -e "keyUtils | Help"
+	echo "-b: barebones mode , removes colors and extras."
+	echo "-h: displays help commands."
+	echo "-l: only displays letters"
+	echo "-n: only displays numbers"
+		echo "-s: only displays symbols"
+		echo "-e: only displays extras"
+		echo ""
+
+elif [ "$lt" = true ]; then
+	echo -e "\033[32m~ KeyUtils v1.0\033[0m"
+	echo ""
+		echo "Q W E R T Y U I O P"
+		echo "q w e r t y u i o p"
+		echo "A S D F G H J K L"
+		echo "a s d f g h j k l"
+		echo "Z X C V B N M , ."
+		echo "z x c v b n m , ."
+		echo ""
+elif [ "$nb" = true ]; then
+	echo -e "\033[32m~ KeyUtils v1.0\033[0m"
+	echo ""
+	echo "0 1 2 3 4 5 6 7 8 9"
+	echo "9 8 7 6 5 4 3 2 1 0"
+	echo "0123456789"
+	echo "9876543210"
+	echo ""
+elif [ "$sb" = true ]; then
+	echo -e "\033[32m~ KeyUtils v1.0\033[0m"
+		echo ""
+			echo "! @ # $ % ^ & * () |"
+		        echo "[] {} ? <> / ~ \\ \` ' \" "
+		        echo "+ - × ÷ = ≠ ≈ < > ≤ ≥ ±"
+		        echo "$ € £ ¥ ₹ ₽ ₿ ¢"
+		        echo "∈ ∉ ∪ ∩ ⊂ ⊃ ∀ ∃ ¬ ∧ ∨"
+		        echo "→ ← ↑ ↓ ↔ ⇒ ⇐ ⇔ ➜ ➡"
+	echo ""
+elif [ "$ex" = true ]; then
+echo -e "\033[32m~ KeyUtils v1.0\033[0m"
+echo ""
+echo "abcdefghijklmnopqrstuvwxyz"
+echo "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+echo ""
+echo "qwertyuiopasdfghjklzxcvbnm"
+echo "QWERTYUIOPASDFGHJKLZXCVBNM"
+echo ""
+echo "azertyuiopqsdfghjklmwxcvbn"
+echo "AZERTYUIOPQSDFGHJKLMWXCVBN"
+echo ""
+else
+echo -e "\033[32m~ KeyUtils v1.0\033[0m"
+echo ""
+echo -e "\033[33m[*] Letters\033[0m"
+echo "0 1 2 3 4 5 6 7 8 9"
+echo "Q W E R T Y U I O P"
+echo "q w e r t y u i o p"
+echo "A S D F G H J K L"
+echo "a s d f g h j k l"
+echo "Z X C V B N M , ."
+echo "z x c v b n m , ."
+echo ""
+echo -e "\033[32m[*] Symbols\033[0m"
+echo "! @ # $ % ^ & * () |"
+echo "[] {} ? <> / ~ \\ \` ' \" "
+echo "+ - × ÷ = ≠ ≈ < > ≤ ≥ ±"
+echo "$ € £ ¥ ₹ ₽ ₿ ¢"
+echo ""
+echo -e "\033[35m[*] Extras\033[0m"
+echo "abcdefghijklmnopqrstuvwxyz"
+echo "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+echo ""
+echo "qwertyuiopasdfghjklzxcvbnm"
+echo "QWERTYUIOPASDFGHJKLZXCVBNM"
+echo ""
+echo "azertyuiopqsdfghjklmwxcvbn"
+echo "AZERTYUIOPQSDFGHJKLMWXCVBN"
+echo ""
+fi
